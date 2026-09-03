@@ -1,0 +1,4 @@
+{
+    "dotnet.defaultSolution": "GameStore.slnx",
+    "liveServer.settings.port": 5001
+}
