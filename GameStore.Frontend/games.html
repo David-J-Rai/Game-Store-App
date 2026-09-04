@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games - My Game Store</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html" class="nav-logo">MyGameStore</a>
+                <div class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./games.html">Games</a>
+                    <a href="./about.html">About</a>
+                </div>
+            </nav>
+        </header>
+        <main class="games-page">
+            <section class="games-list">
+                <h2>All Games</h2>
+                <div id="game-cards">
+                    <article class="game-card">
+                        <img src="{game_thumbnail}" alt="{game_name}" />
+                        <div>
+                            <h3>{game_name}</h3>
+                            <p>{game_genre}</p>
+                            <p>{game_price}</p>
+                            <p>{game_release_date}</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 My Game Store. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

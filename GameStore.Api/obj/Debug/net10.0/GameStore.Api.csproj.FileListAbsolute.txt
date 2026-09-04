@@ -143,3 +143,4 @@ C:\Users\David\Desktop\Game Store App\gamestore.api\obj\Debug\net10.0\refint\Gam
 C:\Users\David\Desktop\Game Store App\gamestore.api\obj\Debug\net10.0\GameStore.Api.pdb
 C:\Users\David\Desktop\Game Store App\gamestore.api\obj\Debug\net10.0\GameStore.Api.genruntimeconfig.cache
 C:\Users\David\Desktop\Game Store App\gamestore.api\obj\Debug\net10.0\ref\GameStore.Api.dll
+C:\Users\David\Desktop\Game Store App\gamestore.api\obj\Debug\net10.0\GameStore.Api.sourcelink.json

@@ -74,9 +74,6 @@ function getRandomItems(arr, count) {
     return shuffled.slice(0, count);
 }
 
-let gamesList = [];
-let genresList = [];
-
 document.addEventListener("DOMContentLoaded", async () => {
     if(window.location.href.includes("index")) {
         gamesList = getRandomItems(await loadGamesTable(), 5);
@@ -118,8 +115,21 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     else if(window.location.href.includes("games")) {
         gamesList = await loadGamesTable();
-    }
-    else if(window.location.href.includes("about")) {
+        const gameCards = document.getElementById("game-cards");
+        gameCards.innerHTML = "";
 
+        gamesList.forEach(game => {
+            gameCards.innerHTML += `
+                <article class="game-card">
+                    <img src="./images/${game.name}.png" alt="${game.name}" />
+                    <div>
+                        <h3>${game.name}</h3>
+                        <p>${game.genre}</p>
+                        <p>$${game.price}</p>
+                        <p>${game.releaseDate}</p>
+                    </div>
+                </article>
+            `
+        })
     }
 });

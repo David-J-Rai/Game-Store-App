@@ -81,7 +81,7 @@ nav {
     margin-right: 20px;
 }
 
-main {
+.home-page, .games-page, .about-page {
     margin: 0;
     flex-grow: 1;
 }
@@ -126,7 +126,7 @@ main {
 
 .card {
     background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 9px;
+    border-radius: 9px; 
     height: 350px;
     width: 18%;
     border: 1px solid #999;
@@ -170,4 +170,69 @@ footer {
 footer p {
     margin: 0;
     padding: 0;
+}
+
+.about-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./../images/about_page_bg.png");
+    background-size: cover;
+    color: #ddd;
+}
+
+.about-page ul {
+    list-style-type: none;
+}
+
+.about-hero,
+.about-story,
+.about-values {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.games-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./../images/games_page_bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ddd;
+}
+
+.games-list {
+    text-align: center;
+}
+
+.game-card {
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 250px;
+    background-color: rgba(25, 25, 25, 0.9);
+    border-radius: 9px;
+}
+
+.game-card img {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+}
+
+.game-card h3 {
+    color: #ddd;
+    margin-top: 0;
+}
+
+.game-card p {
+    margin: 0;
+    color: #ddd;
+}
+
+.game-card div {
+    margin: auto 15px;
+    padding-left: 15px;
+    text-align: left;
 }
