@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game Details - My Game Store</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html" class="nav-logo">MyGameStore</a>
+                <div class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./games.html" aria-current="page">Games</a>
+                    <a href="./about.html">About</a>
+                    <a href="./cart.html" class="cart-link">Cart <span id="cart-count" class="cart-count">0</span></a>
+                </div>
+            </nav>
+        </header>
+        <main class="detail-page">
+            <section class="detail-content">
+                <a class="back-link" href="./games.html">&larr; Back to games</a>
+                <p class="status-message" id="game-status" role="status" aria-live="polite">Loading game...</p>
+                <article class="game-detail" id="game-detail" hidden></article>
+                <section class="catalog-error" id="game-error" hidden>
+                    <p id="game-error-message">We couldn't load this game. Check that the Game Store API is running and try again.</p>
+                    <a class="btn" href="./games.html">Browse all games</a>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 My Game Store. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -13,24 +13,48 @@
                 <a href="./index.html" class="nav-logo">MyGameStore</a>
                 <div class="nav-links">
                     <a href="./index.html">Home</a>
-                    <a href="./games.html">Games</a>
+                    <a href="./games.html" aria-current="page">Games</a>
                     <a href="./about.html">About</a>
+                    <a href="./cart.html" class="cart-link">Cart <span id="cart-count" class="cart-count">0</span></a>
                 </div>
             </nav>
         </header>
         <main class="games-page">
             <section class="games-list">
-                <h2>All Games</h2>
-                <div id="game-cards">
-                    <article class="game-card">
-                        <img src="{game_thumbnail}" alt="{game_name}" />
-                        <div>
-                            <h3>{game_name}</h3>
-                            <p>{game_genre}</p>
-                            <p>{game_price}</p>
-                            <p>{game_release_date}</p>
-                        </div>
-                    </article>
+                <div class="catalog-heading">
+                    <p class="eyebrow">Find your next favourite</p>
+                    <h1>All Games</h1>
+                    <p>Browse the collection and find a game worth playing.</p>
+                </div>
+                <div class="catalog-toolbar">
+                    <label class="search-field">
+                        <span>Search games</span>
+                        <input id="game-search" type="search" placeholder="Search by title or genre" autocomplete="off">
+                    </label>
+                    <label>
+                        <span>Genre</span>
+                        <select id="genre-filter">
+                            <option value="">All genres</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Sort by</span>
+                        <select id="game-sort">
+                            <option value="name-asc">Title: A to Z</option>
+                            <option value="name-desc">Title: Z to A</option>
+                            <option value="price-asc">Price: low to high</option>
+                            <option value="price-desc">Price: high to low</option>
+                            <option value="release-desc">Newest releases</option>
+                            <option value="release-asc">Oldest releases</option>
+                        </select>
+                    </label>
+                </div>
+                <p class="catalog-count" id="catalog-count" aria-live="polite"></p>
+                <p class="status-message" id="games-status" role="status" aria-live="polite">Loading games...</p>
+                <div id="game-cards" class="game-cards"></div>
+                <div class="catalog-error" id="games-error" hidden>
+                    <p>We couldn't load the game collection. Check that the Game Store API is running and try again.</p>
+                    <button class="btn" id="retry-games" type="button">Try again</button>
                 </div>
             </section>
         </main>

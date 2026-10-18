@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7aU7oHfEujI=",
+  "dgSpecHash": "iU5qAwLOHKA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\David\\Desktop\\Game Store App\\gamestore.api\\GameStore.Api.csproj",
+  "projectFilePath": "C:\\D\\My Projects\\Game Store App\\GameStore.Api\\GameStore.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",
@@ -41,9 +41,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SQLitePCLRaw.lib.e_sqlite3' 2.1.11 has a known high severity vulnerability, https://github.com/advisories/GHSA-2m69-gcr7-jv3q",
-      "projectPath": "C:\\Users\\David\\Desktop\\Game Store App\\gamestore.api\\GameStore.Api.csproj",
+      "projectPath": "C:\\D\\My Projects\\Game Store App\\GameStore.Api\\GameStore.Api.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\David\\Desktop\\Game Store App\\gamestore.api\\GameStore.Api.csproj",
+      "filePath": "C:\\D\\My Projects\\Game Store App\\GameStore.Api\\GameStore.Api.csproj",
       "libraryId": "SQLitePCLRaw.lib.e_sqlite3",
       "targetGraphs": [
         "net10.0"

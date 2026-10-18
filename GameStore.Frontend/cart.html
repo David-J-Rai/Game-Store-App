@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Cart - My Game Store</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="./index.html" class="nav-logo">MyGameStore</a>
+                <div class="nav-links">
+                    <a href="./index.html">Home</a>
+                    <a href="./games.html">Games</a>
+                    <a href="./about.html">About</a>
+                    <a href="./cart.html" class="cart-link" aria-current="page">Cart <span id="cart-count" class="cart-count">0</span></a>
+                </div>
+            </nav>
+        </header>
+        <main class="cart-page">
+            <section class="cart-content">
+                <p class="eyebrow">Ready for your next adventure?</p>
+                <h1>Your Cart</h1>
+                <p class="status-message" id="cart-status" role="status" aria-live="polite">Loading your cart...</p>
+                <div class="cart-layout" id="cart-layout" hidden>
+                    <div class="cart-items" id="cart-items"></div>
+                    <aside class="cart-summary">
+                        <h2>Order summary</h2>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <strong id="cart-subtotal">$0.00</strong>
+                        </div>
+                        <p>Taxes and delivery details are handled at checkout.</p>
+                        <a class="btn" href="./games.html">Continue shopping</a>
+                    </aside>
+                </div>
+                <div class="cart-empty" id="cart-empty" hidden>
+                    <p>Your cart is empty. Find something fun to play.</p>
+                    <a class="btn" href="./games.html">Browse games</a>
+                </div>
+                <div class="catalog-error" id="cart-error" hidden>
+                    <p>We couldn't load your cart. Check that the Game Store API is running and try again.</p>
+                    <button class="btn" id="retry-cart" type="button">Try again</button>
+                </div>
+                <p class="cart-notice" id="cart-notice" role="status" aria-live="polite"></p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 My Game Store. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

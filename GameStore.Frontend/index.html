@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Game Store</title>
+        <title>Home - My Game Store</title>
         <link rel="stylesheet" href="css/main.css">
         <script src="js/main.js" defer></script>
     </head>
@@ -12,9 +12,10 @@
             <nav>
                 <a href="./index.html" class="nav-logo">MyGameStore</a>
                 <div class="nav-links">
-                    <a href="./index.html">Home</a>
+                    <a href="./index.html" aria-current="page">Home</a>
                     <a href="./games.html">Games</a>
                     <a href="./about.html">About</a>
+                    <a href="./cart.html" class="cart-link">Cart <span id="cart-count" class="cart-count">0</span></a>
                 </div>
             </nav>
         </header>
@@ -25,39 +26,23 @@
                 <a href="./games.html" class="btn">Browse Games</a>
             </section>
             <section class="featured">
-                <h2>Featured Games</h2>
-                <div class="featured-games">
-                    <article class="card" id="featured1">
-                        <img src="./images/{game_name}.png" alt="{game_img_alt}" />
-                        <h4>{game_name}</h4>
-                        <p>{game_genre}</p>
-                        <p>{game_price}</p>
-                    </article>
-                    <article class="card" id="featured2">
-                        <img src="./images/{game_name}.png" alt="{game_img_alt}" />
-                        <h4>{game_name}</h4>
-                        <p>{game_genre}</p>
-                        <p>{game_price}</p>
-                    </article>
-                    <article class="card" id="featured3">
-                        <img src="./images/{game_name}.png" alt="{game_img_alt}" />
-                        <h4>{game_name}</h4>
-                        <p>{game_genre}</p>
-                        <p>{game_price}</p>
-                    </article>
-                    <article class="card" id="featured4">
-                        <img src="./images/{game_name}.png" alt="{game_img_alt}" />
-                        <h4>{game_name}</h4>
-                        <p>{game_genre}</p>
-                        <p>{game_price}</p>
-                    </article>
-                    <article class="card" id="featured5">
-                        <img src="./images/{game_name}.png" alt="{game_img_alt}" />
-                        <h4>{game_name}</h4>
-                        <p>{game_genre}</p>
-                        <p>{game_price}</p>
-                    </article>
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">A few of our favourites</p>
+                        <h2>Featured Games</h2>
+                    </div>
+                    <a class="text-link" href="./games.html">Explore the collection <span aria-hidden="true">&rarr;</span></a>
                 </div>
+                <p class="status-message" id="featured-status" role="status" aria-live="polite">Loading games...</p>
+                <div class="featured-games" id="featured-games"></div>
+            </section>
+            <section class="home-promo">
+                <div>
+                    <p class="eyebrow">Your next adventure starts here</p>
+                    <h2>Great games. Fair prices.</h2>
+                    <p>Find a new favourite, revisit a classic, or discover something unexpected.</p>
+                </div>
+                <a href="./games.html" class="btn">Explore all games</a>
             </section>
         </main>
         <footer>
